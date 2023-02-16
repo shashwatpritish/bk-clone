@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <main class="main">
+        <header>
+            <div class="logo">
+                <a href="/"><img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </header>
+        <span class="btns">
+            <button id="dark">Dark</button>
+            <button id="light">Light</button>
+        </span>
+        <br>
+        <form action="/contact" method="post" class="form">
+            <h1 id="head">Please Submit This form to get Burger</h1>
+            <input type="text" name="name" id="name" placeholder="Enter your name here"><br>
+            <input type="email" name="email" id="email" placeholder="Enter your email here"><br>
+            <input type="number" name="phone" placeholder="Enter your Number here"><br>
+            <input type="text" name="address" placeholder="Enter your address here"><br>
+            <input type="text" name="type" placeholder="Enter which flavour do you want"><br>
+            <h3 id="note">This will not provide you any burger please go to official website to get burger</h3>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </main>
+</body>
+<script>
+    document.getElementById("dark").addEventListener("click", () => {
+        document.body.style.backgroundColor = "black"
+        document.body.style.color = "white"
+    })
+    document.getElementById("light").addEventListener("click", () => {
+        document.body.style.backgroundColor = "white"
+        document.body.style.color = "black"
+    })
+</script>
+
+</html>

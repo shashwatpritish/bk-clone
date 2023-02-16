@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Burger King</title>
+</head>
+
+<body>
+    <main class="main">
+        <header>
+            <div class="logo">
+                <a href="/"><img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </header>
+        <span class="btns">
+            <button id="dark">Dark</button>
+            <button id="light">Light</button>
+        </span>
+        <div class="content">
+            <div class="inner-content">
+                <div class="part1">
+                    <div id="texts">
+                        <h1 class="heading">Burger King</h1>
+                        <b id="text">Your favoraite burgers are here</b>
+                    </div>
+                    <div id="image">
+                        <img src="{{ url_for('static', filename='img.jpg') }}" id="Image">
+                    </div>
+                </div>
+                <div class="part2">
+                    <button>
+                        <h1>Panir Burger</h1>
+                        <p>
+
+                            This burger contains panir<br>
+                            It also contains sause<br>
+                            You can drink only Sprite with this Burger
+
+                        </p>
+                    </button>
+                    <button>
+                        <h1>Masala Burger</h1>
+                        <p>
+
+                            This burger contains tasty masala<br>
+                            It also contains sause<br>
+                            You can drink only Sprite and Maaza with this Burger
+
+                        </p>
+                    </button>
+                    <button>
+                        <h1>Chilli Burger</h1>
+                        <p>
+                            
+                            This burger contains panir and masala as well as chilli<br>
+                            It also contains chilli sause and tomato sause<br>
+                            You can drink all colddrink with this Burger
+                            
+                        </p>
+                    </button>
+                    <span id="popular">Popular</span><br>
+
+                </div>
+                <div class="part3">
+                    <div class="left">
+                        <h1>Eat and Drink</h1>
+                        <br>
+                        <b>Eat burger and build your health because our burgers uses pure oil, clean water, fresh
+                            vegitables</b><br>
+                        <b>Drink any colddrink for any burger with ₹1 extra charge</b>
+                        <br><br>
+                        <span class="download">
+                            <h2>Download our app.<br> Our app is avaliable on<br> Play Store and App Store</h2><br>
+                            <a href="https://play.google.com/store/apps/details?id=in.burgerking.android&pli=1" target="_blank" rel="noopener noreferrer"><img src="{{ url_for('static', filename='play_store.png') }}" alt="Play store" width="128" height="38" role="presentation"></a>
+                            <a href="https://apps.apple.com/us/app/burger-king-india/id1516627543" target="_blank" rel="noopener noreferrer"><img src="{{ url_for('static', filename='app_store.png') }}" alt="App store" width="128" height="38" role="presentation"></a>
+
+                        </span>
+                    </div>
+                    <div class="right">
+                        <img src="{{ url_for('static', filename='download_app.jpg') }}" alt="Download our app now">
+                    </div>
+                </div>
+                <div class="part4">
+                    <h1 style="color: yellow">Join us on</h1>
+                    <a href="https://www.facebook.com/burgerkingindia/" target="_main"><img src="static\facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/burgerkingindia/" target="_main"><img src="static\insta.jpg" alt="" style="border-radius: 20px; "></a>
+                    <a href="https://www.youtube.com/user/BurgerKingIndia" target="_main"><img src="static\youtube.jpg" alt="" style="border-radius: 20px;"></a>
+                    <a href="https://twitter.com/burgerkingindia" target="_main"><img src="static\tweet.png" alt="" style="border-radius: 20px; "></a>
+                </div>
+            </div>
+        </div>
+    </main><br>
+</body>
+<script>
+    document.getElementById("dark").addEventListener("click", () => {
+        document.body.style.backgroundColor = "black"
+        document.body.style.color = "white"
+    })
+    document.getElementById("light").addEventListener("click", () => {
+        document.body.style.backgroundColor = "white"
+        document.body.style.color = "black"
+    })
+</script>
+
+</html>

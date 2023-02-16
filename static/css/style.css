@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+.main {
+    display: flex;
+}
+
+header {
+    background: linear-gradient(#f0f,#0ff);
+    height: 100vh;
+    width: 20vw;
+    position: fixed;
+}
+
+header .logo img {
+    border-radius: 80px;
+    width: 56px;
+    margin-left: 6vw;
+    animation: rotate .6s linear infinite;
+    cursor: pointer;
+}
+
+header ul {
+    list-style-type: none;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+header ul li {
+    margin: 11px 0px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+header ul li a:hover {
+    color: rgb(0, 255, 0);
+    text-decoration: underline rgb(0, 255, 0);
+}
+
+.btns {
+    position: fixed;
+    right: 5px;
+
+}
+
+.content {
+    width: 80vw;
+    height: 100vh;
+
+}
+
+#dark,#light {
+    font-family: 'Merriweather', serif;
+    background-color: white;
+    color: dodgerblue;
+    border-radius: 5px;
+    border: 2px solid dodgerblue;
+    padding: 4px;
+    transition: all ease .3s;
+}
+
+#dark:hover {
+    background-color: dodgerblue;
+    color: black;
+}
+
+#light:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.inner-content {
+    margin-left: 243px;
+    margin-top: 5px;
+}
+
+.part1{
+    display: flex;
+    border-bottom: 2px dashed rgb(0, 255, 55);
+    width: 77vw;
+}
+
+.heading{
+    font-family: 'Playfair Display', serif;
+}
+
+#text{
+    font-family: 'Quicksand', sans-serif;
+}
+
+#image #Image{
+    width: 240px;
+    height: 200px;
+    border-radius: 11px;
+    margin-left: 73px;
+}
+
+.part2{
+    margin-top: 5px;
+    padding-bottom: 13px;
+    border-bottom: 2px dashed rgb(0, 255, 55);
+    width: 77vw;
+}
+.part2 button{
+    background-color: rgb(0, 251, 255);
+    /* color: black; */
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#popular{
+    margin-top: 5px;
+    color: rgb(221, 0, 255);
+    font-size: 25px;
+    background: orange;
+    font-family: 'Julee';
+    border-radius: 5px;
+}
+
+.download h2{
+    font-family: 'Source Serif Pro', serif;
+}
+
+.part3{
+    display: flex;
+    border-bottom: 2px dashed rgb(0, 255, 55);
+    width: 77vw;
+}
+
+.left h1{
+    font-family: 'Anton', sans-serif;
+}
+.left b{
+    font-family: 'Teko', sans-serif;
+}
+
+.right img{
+    margin-top: 120px;
+    border-radius: 5px;
+}
+
+.part4{
+    background: #000;
+    width: 80vw;
+}
+
+.part4 h1{
+    cursor: pointer;
+}
+
+.part4 h1:hover{
+    text-decoration: underline;
+}
+
+.part4 a img{
+    width: 100px;
+    border: 2px solid #0f0;
+    border-radius: 5px;
+    margin: 0px 3px;
+}
+
+.form{
+    margin-left: 300px;
+    margin-top: 76px;
+}
+
+.form input{
+    border: 2px solid dodgerblue;
+    width: 730px;
+    padding-left: 3px;
+    border-radius: 10px;
+    font-size: 50px;
+    margin: 5px 0px;
+    background: transparent;
+    color: dodgerblue;
+    transition: all ease .3s;
+    font-family: 'Ubuntu', sans-serif;
+}
+.form input:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+
+#name{
+    background-color: transparent;
+    color: dodgerblue;
+}
+#email{
+    background-color: transparent;
+    color: dodgerblue;
+}
+#name:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+#email:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+
+#submit{
+    width: 192px;
+    background-color: transparent;
+    color: dodgerblue;
+    transition: all ease .3s;
+    font-family: 'Oxygen', sans-serif;
+}
+#submit:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+
+#head{
+    font-family: 'Lora', serif;
+    font-size: 40px;
+}
+
+#note{
+    font-family: 'Hind',sans-serif;
+}
+
+/* Animations */
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
